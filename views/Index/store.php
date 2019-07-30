@@ -7,7 +7,7 @@
    <title>Formularz ajax</title>
    <meta charset="utf-8">
    <link href="../css/bootstrap.min.css" rel="stylesheet">
-   <link href="../css/aps.css" rel="stylesheet">
+   <link href="../css/appppps.css" rel="stylesheet">
    <script type="text/javascript" src="../js/jquery-3.4.1.js"></script>
    <script src="../js/validations.js" type="text/javascript"></script>
  </head>
@@ -51,6 +51,11 @@
 	         <input type="hidden" name="id" value="<?php echo $User ?>" />
            <input type="submit" class="btn btn-success" name="powrót do formularza" value="powrót do formularza" />
            </form>
+           <form action="delete" method="post">
+	       <input type="hidden" name="id" value="<?php echo $User[0] -> id ; ?>" />
+
+	   <input type="submit" class="btn btn-success" name="usun" value="usun" />
+        </form>
            </div>
            </div>
           <?php }?>

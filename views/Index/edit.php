@@ -76,7 +76,7 @@
    <title>Formularz ajax</title>
    <meta charset="utf-8">
    <link href="../css/bootstrap.min.css" rel="stylesheet">
-   <link href="../css/aps.css" rel="stylesheet">
+   <link href="../css/appppps.css" rel="stylesheet">
    <script type="text/javascript" src="../js/jquery-3.4.1.js"></script>
    <script src="../js/validations.js" type="text/javascript"></script>
  </head>
@@ -95,10 +95,11 @@
       </div>
     <div class="container">
         <div class="jumbotron">
-         <h1 class="headerSection">Skontaktuj się z nami</h1>
+         <h1 class="headerSection">Edytuj swoje dane</h1>
         </div>
       
-     <form action="/mvc3/Index/store" method="post">
+     <form action="/mvc3/Index/update" method="post">
+     <input type="hidden" name="id" value=<?=$User[0]->id?> />
         <div class="form-group row">
             <label for="text" class="col-sm-2 col-form-label text-primary bg_info" >Imie </label>  
             <div class="col-sm-10">
@@ -151,6 +152,11 @@
           <div class="col-sm-12">  
             <input id="submit" type="submit" value="Wyślij" class="btn btn-primary w-25"/>
            </form>
+           <form action="delete" method="post">
+	       <input type="hidden" name="id" value="<?php echo $User[0] -> id ; ?>" />
+
+	   <input type="submit" class="btn btn-danger" name="usun" value="usun" />
+        </form>
          </div>
         </div>
       </form>

@@ -7,7 +7,7 @@
    <title>Formularz ajax</title>
    <meta charset="utf-8">
    <link href="../css/bootstrap.min.css" rel="stylesheet">
-   <link href="../css/aps.css" rel="stylesheet">
+   <link href="../css/appppps.css" rel="stylesheet">
    <script type="text/javascript" src="../js/jquery-3.4.1.js"></script>
    <script src="../js/validations.js" type="text/javascript"></script>
  </head>
@@ -24,6 +24,7 @@
           </div>
         </div>
       </div>
+    </div>
     <div class="container">
      <div class="row">
        <div class="col-sm-12">
@@ -65,5 +66,5 @@
       </div>
     </div>
     <div class="STOPKA"> </div>
- </body>
+  </body>
 </html>

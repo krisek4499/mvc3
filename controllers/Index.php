@@ -122,15 +122,15 @@ class Index extends Controller{
     private function Update(){
        
         $id=$_POST["id"];
-        $imie=$_POST["imie"];
+        $imie=$_POST["name"];
         $imie = htmlentities($imie,ENT_QUOTES,"UTF-8" );
-        $nazwisko=$_POST["nazwisko"];
+        $nazwisko=$_POST["surname"];
         $nazwisko = htmlentities($nazwisko,ENT_QUOTES,"UTF-8" );
-        $zawod=$_POST["zawod"];
+        $zawod=$_POST["trade"];
         $zawod = htmlentities($zawod,ENT_QUOTES,"UTF-8" );
-        $nr_telefonu=$_POST["nr_telefonu"];
+        $nr_telefonu=$_POST["number"];
         $nr_telefonu = htmlentities($nr_telefonu,ENT_QUOTES,"UTF-8" );
-        $data_ur=$_POST["data_ur"];
+        $data_ur=$_POST["date"];
         $email=$_POST["email"];
         $email = htmlentities($email,ENT_QUOTES,"UTF-8" );
 
