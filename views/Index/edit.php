@@ -98,8 +98,8 @@
          <h1 class="headerSection">Edytuj swoje dane</h1>
         </div>
       
-     <form action="/mvc3/Index/update" method="post">
-     <input type="hidden" name="id" value=<?=$User[0]->id?> />
+       <form action="/mvc3/Index/update" method="post">
+       <input type="hidden" name="id" value=<?=$User[0]->id?> />
         <div class="form-group row">
             <label for="text" class="col-sm-2 col-form-label text-primary bg_info" >Imie </label>  
             <div class="col-sm-10">
@@ -148,18 +148,23 @@
           </div>
         </div>
 
-        <div class="form-group row"></div>
-          <div class="col-sm-12">  
+        <div class="form-group row">
+        <div class="col-sm-1">  </div>
+          <div class="col-sm-11">  
             <input id="submit" type="submit" value="Wyślij" class="btn btn-primary w-25"/>
            </form>
-           <form action="delete" method="post">
-	       <input type="hidden" name="id" value="<?php echo $User[0] -> id ; ?>" />
-
-	   <input type="submit" class="btn btn-danger" name="usun" value="usun" />
-        </form>
-         </div>
+          </div>
         </div>
-      </form>
+        <div class="form-group row">
+        <div class="col-sm-1">  </div>
+          <div class="col-sm-11">  
+           <form action="delete" method="post">
+	         <input type="hidden" name="id" value="<?php echo $User[0] -> id ; ?>" />
+           <input type="submit" class="btn btn-danger w-25" name="usun" value="usun" />
+           </form>
+          </div>
+       </div>
+     </div>
    </div>
    <div class="STOPKA"> </div>
  </body>

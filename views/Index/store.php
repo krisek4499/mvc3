@@ -24,6 +24,9 @@
       </div>
      </div>
     <div class="container">
+    <div class="jumbotron">
+         <h1 class="headerSection">Dziękujemy za zarejestrowanie</h1>
+        </div>
      <div class="row">
        <div class="col-sm-12">
           <?php
@@ -36,7 +39,7 @@
                 <br><i>Email: <?= $User[0] -> email ?></i></br>
                 <form action="delete" method="post">
 	          <input type="hidden" name="id" value="<?php echo $User[0] -> id ; ?>" />
-            <input type="submit" class="btn btn-success" name="usun" value="usun" />
+            <input type="submit" class="btn btn-danger" name="usun" value="usun" />
             </form>
 		        <form action="edit" method="post">
 	          <input type="hidden" name="id" value="<?php echo $User[0] -> id ; ?>" />
@@ -51,11 +54,7 @@
 	         <input type="hidden" name="id" value="<?php echo $User ?>" />
            <input type="submit" class="btn btn-success" name="powrót do formularza" value="powrót do formularza" />
            </form>
-           <form action="delete" method="post">
-	       <input type="hidden" name="id" value="<?php echo $User[0] -> id ; ?>" />
-
-	   <input type="submit" class="btn btn-success" name="usun" value="usun" />
-        </form>
+         
            </div>
            </div>
           <?php }?>
