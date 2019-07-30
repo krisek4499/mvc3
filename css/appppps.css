@@ -1,0 +1,201 @@
+
+html, body {
+	background-color: #fff;
+	color: #000;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+.top {
+  background-color: #888;
+  width: 100%;
+  height:240px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+}
+
+.NAGLOWEK {
+	background-color: #888;
+}
+
+.MENU {
+	width: 150px;
+	float: left;
+	overflow: hidden;
+	background-color: #fff;
+}
+
+.TRESC {
+  width:20%;
+  height:500px;
+	float: left;
+
+	background-color: #fff;
+}
+
+.STOPKA {
+	clear: both;
+  width: 100%;
+  height:240px;
+	background-color: #888;
+}
+
+/***********name*****/
+
+
+/*input[name=name]{
+  position: relative;
+   padding: 20px 75px 0px 20px;
+  margin: 1.0em 0.0em 0.45em 0.05em;
+  opacity:0.5;
+
+}
+label{ 
+  background:#fff none repeat scroll 0 0;
+  font-size: 1.4em;
+  margin: -1.9em 0.0em 0.2em 1.0em
+}
+
+input[name=name]:focus + label{
+  background: #fff ;
+
+}
+
+input[name=name]:focus + label { content:'';
+  animation:przesun 0.1s linear forwards;}
+
+
+input[name=name]:not([value=""]) + label { content:''; animation:przesun 0.1s linear forwards;}*/
+
+/***********surname*****/
+
+/*input[name=surname]{
+  position: relative;
+  padding: 20px 75px 0px 20px;
+ margin: 1.0em 0.0em 0.45em 0.05em;
+ opacity:0.5
+}
+
+input[name=surname]:focus + label{
+  background: #fff none repeat scroll 0 0;
+  padding: 0px 0px 0px 0px;
+}
+input[name=surname]:focus + label { content:'';
+  animation:przesun 0.1s linear forwards;}
+ 
+input[name=surname]:not([value=""]) + label{ content:''; animation:przesun 0.1s linear forwards;}*/
+
+/***********numer*****/
+
+/*input[name=number]{
+  position: relative;
+  padding: 20px 75px 0px 20px;
+ margin: 1.0em 0.0em 0.45em 0.05em;
+ opacity:0.5
+}
+
+input[name=number]:focus + label{
+  background: #fff none repeat scroll 0 0;
+  padding: 0px 0px 0px 0px;
+}
+input[name=number]:focus + label { content:'';
+  animation:przesun 0.1s linear forwards;}
+ 
+input[name=number]:not([value=""]) + label{ content:''; animation:przesun 0.1s linear forwards;}
+ 
+
+.schedulerr-border {
+  border: 2px groove #ddd !important;
+  padding: 0.0em 2.0em 1.0em 1.0em !important;
+  margin: 2.0em 2.0em 1.0em 0 !important;
+  border: 1px solid #337ab7;
+  border-radius: 9px;
+  background:#fff none repeat scroll 0 0;
+ 
+  -webkit-box-shadow:  0px 0px 0px 0px #000;
+          box-shadow:  0px 0px 0px 0px #000;
+          box-shadow: 5px 10px;
+
+          animation:naszaAnimacja 1s linear  forwards;
+}
+
+.scheduler-border {
+  
+  font-size: 1.8em !important;
+  font-weight: bold !important;
+  text-align: left !important;
+  width:auto;
+  background: #fff none repeat scroll 0 0;
+}*/
+
+@keyframes przesun
+{
+  0% { transform:translateY(0px); }
+  100% { transform:translateX(-100px) translateY(-50px) scale(.70);  color:#01a725;}
+}
+
+
+@keyframes naszaAnimacja
+{
+  0% { transform:rotateY(0); }
+  100% { transform:rotateY(360deg); }
+}
+@keyframes ruch
+{
+  0% { left:-2px; top:-2px; }
+  25% { left:310px; top:-2px; }
+  50% { left:310px; top:104px; }
+  75% { left:-2px; top:104px; }
+  100% { left:-2px; top:-2px; }
+}
+.emailFormAlert {
+  color: #fe0011;
+  margin-top: 15px;
+  text-align:center;
+  height: 50px;
+  font-size: 1.1em;
+  overflow: auto;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.emailFormAlert .fa {
+  
+  color: #555;
+}
+
+.WrongInput {
+  background: #fd4854;
+  border: 1px solid red;
+  animation: 1s shake;
+  color: rgb(153, 145, 145);
+}
+
+.shake {
+  animation: 1s shake;
+}
+
+@keyframes shake {
+   0%, 100% {transform: translateX(0);} 
+   10%, 30%, 50%, 70%, 90% {transform: translateX(-3px);} 
+   20%, 40%, 60%, 80% {transform: translateX(3px);} 
+} 
+
+.contact .close-btn:hover {
+  cursor: pointer;
+  outline: none;
+}
+
+@media (max-height: 465px){
+  .contact {
+    height: 85vh;
+    margin-top: 40px;
+    overflow: auto;
+  }
+  .emailForm textarea {
+    height: 20vh;
+  }
+}
